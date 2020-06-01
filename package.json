@@ -5,7 +5,10 @@
 	"keywords": [],
 	"main": "js/index",
 	"types": "dts/index",
-	"files": ["js", "dts"],
+	"files": [
+		"js",
+		"dts"
+	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepublishOnly": "npm run compile",
