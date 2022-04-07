@@ -3,6 +3,5 @@ node_modules
 dts
 js
 package-lock.json
-.vscode
 dist
 build

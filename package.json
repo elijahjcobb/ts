@@ -12,8 +12,8 @@
 		"test": "npm run compile && jest .",
 		"prepublishOnly": "npm run compile",
 		"compile": "npm run clean && tsc -p tsconfig.json",
-		"clean": "rm -rf js && rm -rf dts",
-		"start": "npm run compile && node js/index.js"
+		"clean": "rm -rf build",
+		"start": "node build/js/index.js"
 	},
 	"repository": {
 		"type": "git",
