@@ -2,7 +2,7 @@ module.exports = {
     clearMocks: true,
     coverageDirectory: "coverage",
     roots: [
-        "<rootDir>/js/tests"
+        "<rootDir>/build/js/tests"
     ],
     testEnvironment: "node",
 };

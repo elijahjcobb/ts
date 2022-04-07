@@ -3,19 +3,17 @@
 	"version": "0.1.0",
 	"description": "",
 	"keywords": [],
-	"main": "js/index",
-	"types": "dts/index",
+	"main": "build/js/index",
+	"types": "build/dts/index",
 	"files": [
-		"js",
-		"dts"
+		"build"
 	],
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "npm run compile && jest .",
 		"prepublishOnly": "npm run compile",
-		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
-		"watch": "tsc -w -p .",
+		"compile": "npm run clean && tsc -p tsconfig.json",
 		"clean": "rm -rf js && rm -rf dts",
-		"start": "node js/index.js"
+		"start": "npm run compile && node js/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -34,7 +32,6 @@
 	"devDependencies": {
 		"@types/node": "latest",
 		"typescript": "latest",
-		"tslint": "latest",
 		"jest": "latest",
 		"@types/jest": "latest"
 	}
